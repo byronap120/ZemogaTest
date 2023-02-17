@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="21507" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_12" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="21505"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" rowHeight="173" id="KGk-i7-Jjw" customClass="PostTableViewCell" customModule="ZemogaTest" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="449" height="173"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="KGk-i7-Jjw" id="H2p-sc-9uM">
+                <rect key="frame" x="0.0" y="0.0" width="449" height="173"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="star" catalog="system" translatesAutoresizingMaskIntoConstraints="NO" id="VTC-GN-661">
+                        <rect key="frame" x="404" y="73.666666666666671" width="25" height="24.666666666666671"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="25" id="6Yv-4d-jRc"/>
+                            <constraint firstAttribute="width" constant="25" id="d68-O4-kdR"/>
+                        </constraints>
+                    </imageView>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" usesAttributedText="YES" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="uAN-dh-eEz">
+                        <rect key="frame" x="20" y="21" width="384" height="131"/>
+                        <attributedString key="attributedText">
+                            <fragment content="Label">
+                                <attributes>
+                                    <font key="NSFont" metaFont="system" size="17"/>
+                                    <paragraphStyle key="NSParagraphStyle" alignment="natural" lineBreakMode="wordWrapping" baseWritingDirection="natural" paragraphSpacing="10" paragraphSpacingBefore="10" tighteningFactorForTruncation="0.0"/>
+                                </attributes>
+                            </fragment>
+                        </attributedString>
+                        <nil key="highlightedColor"/>
+                    </label>
+                </subviews>
+                <constraints>
+                    <constraint firstItem="VTC-GN-661" firstAttribute="leading" secondItem="uAN-dh-eEz" secondAttribute="trailing" id="40g-Ih-2ZZ"/>
+                    <constraint firstItem="uAN-dh-eEz" firstAttribute="centerY" secondItem="H2p-sc-9uM" secondAttribute="centerY" id="MD2-od-Rmd"/>
+                    <constraint firstItem="VTC-GN-661" firstAttribute="centerY" secondItem="H2p-sc-9uM" secondAttribute="centerY" id="Tmh-Zp-veg"/>
+                    <constraint firstAttribute="bottomMargin" secondItem="uAN-dh-eEz" secondAttribute="bottom" constant="10" id="W8z-GD-NMa"/>
+                    <constraint firstAttribute="trailing" secondItem="VTC-GN-661" secondAttribute="trailing" constant="20" symbolic="YES" id="eTO-ZJ-Sc7"/>
+                    <constraint firstItem="uAN-dh-eEz" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="topMargin" constant="10" id="hZD-qq-zcp"/>
+                    <constraint firstItem="uAN-dh-eEz" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leadingMargin" id="z8f-91-Eyp"/>
+                </constraints>
+            </tableViewCellContentView>
+            <viewLayoutGuide key="safeArea" id="njF-e1-oar"/>
+            <connections>
+                <outlet property="postImageFavorite" destination="VTC-GN-661" id="gLJ-6a-IQF"/>
+                <outlet property="postTitle" destination="uAN-dh-eEz" id="YLH-cu-YFu"/>
+            </connections>
+            <point key="canvasLocation" x="-12.977099236641221" y="33.450704225352112"/>
+        </tableViewCell>
+    </objects>
+    <resources>
+        <image name="star" catalog="system" width="128" height="116"/>
+    </resources>
+</document>
