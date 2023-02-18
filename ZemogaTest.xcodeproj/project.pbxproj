@@ -48,6 +48,7 @@
 		9ED6A750299D5FE300F653FE /* PostResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9ED6A74F299D5FE300F653FE /* PostResponse.swift */; };
 		9ED6A752299D604C00F653FE /* CommentResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9ED6A751299D604C00F653FE /* CommentResponse.swift */; };
 		9ED6A755299D8E3E00F653FE /* PostsModel.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 9ED6A753299D8E3E00F653FE /* PostsModel.xcdatamodeld */; };
+		9ED85CBF29A0522F0078B5C0 /* UIViewController+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9ED85CBE29A0522F0078B5C0 /* UIViewController+Extensions.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -111,6 +112,7 @@
 		9ED6A74F299D5FE300F653FE /* PostResponse.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PostResponse.swift; sourceTree = "<group>"; };
 		9ED6A751299D604C00F653FE /* CommentResponse.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CommentResponse.swift; sourceTree = "<group>"; };
 		9ED6A754299D8E3E00F653FE /* PostsModel.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = PostsModel.xcdatamodel; sourceTree = "<group>"; };
+		9ED85CBE29A0522F0078B5C0 /* UIViewController+Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIViewController+Extensions.swift"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -338,6 +340,7 @@
 		9ED6A732299D41DD00F653FE /* Shared */ = {
 			isa = PBXGroup;
 			children = (
+				9ED85CBD29A052190078B5C0 /* Controller */,
 				9ED6A74E299D5FC500F653FE /* Entity */,
 			);
 			path = Shared;
@@ -427,6 +430,14 @@
 				9E1F2644299E039200D93760 /* UsersResponse.swift */,
 			);
 			path = Entity;
+			sourceTree = "<group>";
+		};
+		9ED85CBD29A052190078B5C0 /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				9ED85CBE29A0522F0078B5C0 /* UIViewController+Extensions.swift */,
+			);
+			path = Controller;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -592,6 +603,7 @@
 				9ED6A755299D8E3E00F653FE /* PostsModel.xcdatamodeld in Sources */,
 				9E67973F299D9EA600B59CB1 /* Comment+CoreDataClass.swift in Sources */,
 				9ED6A752299D604C00F653FE /* CommentResponse.swift in Sources */,
+				9ED85CBF29A0522F0078B5C0 /* UIViewController+Extensions.swift in Sources */,
 				9E2FB3A4299ED93900E6602B /* Author+CoreDataClass.swift in Sources */,
 				9ED6A750299D5FE300F653FE /* PostResponse.swift in Sources */,
 				9ECDE20A299DCF440044CEEC /* PostTableViewCell.swift in Sources */,

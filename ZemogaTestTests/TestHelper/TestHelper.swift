@@ -39,7 +39,7 @@ class TestHelper {
         let mockComment2 = Comment(entity: Comment.entity(), insertInto: mockManagedObjectContext)
         mockComment2.id = 2
         mockComment2.body = "Comment 2"
-        
+    
         return [mockComment1, mockComment2]
     }
     
