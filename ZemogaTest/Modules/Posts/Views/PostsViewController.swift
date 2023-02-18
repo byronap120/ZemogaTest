@@ -66,7 +66,7 @@ extension PostsViewController: PresenterToViewPostProtocol {
     }
     
     func onFetchPostsFailure(error: String) {
-        
+        showAlertMessage(title: "Error", message: error)
     }
     
     func showLoader() {
@@ -101,8 +101,6 @@ extension PostsViewController: UITableViewDelegate, UITableViewDataSource {
         cell.postImageFavorite.addGestureRecognizer(tapGesture)
         cell.postImageFavorite.isUserInteractionEnabled = true
         cell.postImageFavorite.tag = indexPath.row
-        
-        
         return cell
     }
     

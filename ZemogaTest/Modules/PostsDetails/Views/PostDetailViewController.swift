@@ -91,7 +91,7 @@ extension PostsDetailViewController: PresenterToViewPostDetailProtocol {
     }
     
     func onFetchDetailFailure(error: String) {
-        
+        showAlertMessage(title: "Error", message: error)
     }
 }
 

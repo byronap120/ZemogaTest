@@ -9,48 +9,6 @@ import Foundation
 import Alamofire
 
 
-//class NetworkService {
-//    let baseURL = "https://jsonplaceholder.typicode.com"
-//
-//
-//    func getPosts(success: @escaping (Array<PostResponse>) -> (), failure: @escaping (String) -> ()) {
-//        print("PostService")
-//        AF.request("\(baseURL)/posts").responseDecodable(of: [PostResponse].self) { response in
-//            print(response.result)
-//            switch(response.result){
-//            case .success( _):
-//                do {
-//                    let postsResponse = try JSONDecoder().decode([PostResponse].self, from: response.data!)
-//                    success(postsResponse)
-//                } catch let error as NSError {
-//                    failure(error.localizedDescription)
-//                }
-//            case .failure(let error):
-//                failure(error.localizedDescription)
-//            }
-//        }
-//    }
-//
-//
-//    func getComments(success: @escaping (Array<CommentResponse>) -> (), failure: @escaping (String) -> ()) {
-//        print("CommentsService")
-//        AF.request("\(baseURL)/comments").responseDecodable(of: [CommentResponse].self) { response in
-//            print(response.result)
-//            switch(response.result){
-//            case .success( _):
-//                do {
-//                    let commentsResponse = try JSONDecoder().decode([CommentResponse].self, from: response.data!)
-//                    success(commentsResponse)
-//                } catch let error as NSError {
-//                    failure(error.localizedDescription)
-//                }
-//            case .failure(let error):
-//                failure(error.localizedDescription)
-//            }
-//        }
-//    }
-//}
-
 class NetworkService {
     static let shared = NetworkService()
     private let baseUrl = "https://jsonplaceholder.typicode.com/"
